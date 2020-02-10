@@ -1,10 +1,11 @@
 package com.hero.ms.system.menu.entity;
 
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -14,13 +15,14 @@ import java.util.Date;
  * @Date 2020/1/2
  */
 @Data
+@Entity
 @TableName("tbl_sys_menu")
 public class TblSysMenu implements Serializable {
 
     /**
      * 主键ID
      */
-    @TableId
+    @Id
     private String menuId;
 
     /**
