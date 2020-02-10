@@ -1,7 +1,7 @@
 package com.hero.ms.system.menu.mapper;
 
 import com.hero.ms.system.menu.entity.TblSysMenu;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
@@ -10,8 +10,8 @@ import java.util.List;
  * @Author yejx
  * @Date 2020/1/2
  */
-@Mapper
-public interface MenuMapper {
+//@Mapper
+public interface MenuMapper extends JpaRepository<TblSysMenu, String> {
 
     /**
      * 查询所有菜单
