@@ -12,8 +12,8 @@ spring:
     password: root
     driver-class-name: com.mysql.jdbc.Driver
 
-mybatis-plus:
-  mapper-locations: classpath:mapper/*Mapper.xml
+#mybatis-plus:
+#  mapper-locations: classpath:mapper/*Mapper.xml
 
 eureka:
   client:
