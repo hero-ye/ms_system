@@ -11,8 +11,6 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  jpa:
-    database-platform: org.hibernate.dialect.MySQLDialect
 
 #mybatis-plus:
 #  mapper-locations: classpath:mapper/*Mapper.xml
