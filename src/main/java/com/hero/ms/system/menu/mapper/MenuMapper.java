@@ -10,13 +10,14 @@ import java.util.List;
  * @Author yejx
  * @Date 2020/1/2
  */
-//@Mapper
 public interface MenuMapper extends JpaRepository<TblSysMenu, String> {
 
     /**
      * 查询所有菜单
+     *
      * @return
      */
-    List<TblSysMenu> findAll();
+    List<TblSysMenu> findByOrderBySortNoAsc();
+
 
 }

@@ -24,7 +24,7 @@ public class MenuServiceImpl implements MenuService {
      */
     @Override
     public List<TblSysMenu> findAll() {
-        return menuMapper.findAll();
+        return menuMapper.findByOrderBySortNoAsc();
     }
 
 }
