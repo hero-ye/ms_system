@@ -91,7 +91,7 @@
     </build>
 
     <!-- 推送到私服：mvn deploy -Dmaven.test.skip=true -->
-    <distributionManagement>
+    <!--<distributionManagement>
         <repository>
             <id>maven-releases</id>
             <name>Nexus Release Repository</name>
@@ -104,7 +104,7 @@
         </snapshotRepository>
     </distributionManagement>
 
-    <!-- 从私服下载依赖 -->
+    &lt;!&ndash; 从私服下载依赖 &ndash;&gt;
     <repositories>
         <repository>
             <id>nexus</id>
@@ -130,6 +130,6 @@
                 <enabled>true</enabled>
             </releases>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
 </project>
